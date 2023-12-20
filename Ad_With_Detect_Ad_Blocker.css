@@ -11,8 +11,6 @@
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.4);
   }
-  
-  
   .modal-content {
     position: relative;
     background-color: #fefefe;
@@ -22,12 +20,37 @@
     width: 80%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
   }
-  
   .modal-header {
     padding: 12px 16px;
     background-color: #f55656;
     color: white !important;
     font-size: 18px;
   }
-  
-  .modal-body {padding: 2px 16px; font-size: 16px;}
+  .modal-body {
+    padding: 2px 16px; 
+    font-size: 16px;
+  }
+  #ad_1{
+    width: auto; 
+    height: auto; 
+    top: auto;
+    background-color: gray;
+  }
+  #ad_2{
+    width: auto; 
+    height: auto; 
+    left: auto;
+    background-color: gray;
+  }
+  #ad_3{
+    width: auto; 
+    height: auto; 
+    right: auto;
+    background-color: gray;
+  }
+  #ad_4{
+    width: auto; 
+    height: auto; 
+    bottom: auto;
+    background-color: gray;
+  }
