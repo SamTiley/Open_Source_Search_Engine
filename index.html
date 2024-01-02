@@ -5,15 +5,68 @@
 <title>Open Source Search Engine</title>
 <link rel="stylesheet" href="Open_Source_Search_Engine.bmp">
 <link rel="stylesheet" href="Open_Source_Search_Engine.css">
-<script src="Open_Source_Search_Engine.js"></script>
+<style>
+#Open_Source_Search_Engine
+{
+
+}
+.Open_Source_Search_Engine
+{
+
+}
+#Open_Source_Search_Engine_List
+{
+
+}
+.Open_Source_Search_Engine_List
+{
+
+}
+</style>
+<script src="Open_Source_Search_Engine.js">
+function search()
+{
+let input = document.getElementById('Open_Source_Search_Engine_List').value
+input = input.toLowerCase();
+let x = document.getElementsByClassName('Open_Source_Search_Engine_List');
+for (i = 0; i < x.length; i++) {
+if (!x[i].innerHTML.toLowerCase().includes(input)) {
+x[i].style.display = "none";
+}
+else
+{
+x[i].style.display = "list-item";
+}
+}
+}
+</script>
 </head>
 <body>
+<div class="Open_Source_Search_Engine">
 <h1 class="title">Open Source Search Engine</h1>
 <video poster="Open_Source_Search_Engine.bmp" src="Open_Source_Search_Engine.mp4" controls="autoplay"></video>
-<div class="search">
-<input type="search" name="search" id="search">
 </div>
-<a href="https://github.com/SamTiley/Open_Source_Search_Engine">Open Source Search Engine Source Code On GitHub</a>
+<div class="Open_Source_Search_Engine">
+<div id="Open_Source_Search_Engine_List">
+<div class="Open_Source_Search_Engine">
+<input type="search" onkeyup="search()" name="search" id="search"  placeholder="Search">
+<ul id="search">
+<li class="Open_Source_Search_Engine_List">
+<a href="">
+<img src="" alt="">
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="Open_Source_Search_Engine">
+<button class="title" type="button">
+<a href="https://github.com/SamTiley/Open_Source_Search_Engine" title="Open_Source_Search_Engine">Open Source Search Engine Source Code On GitHub</button>
+</div>
+</a>
+<div class="Open_Source_Search_Engine">
 <p class="title">Open Source Search Engine</p>
+</div>
 </body>
 </html>
