@@ -4,65 +4,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Open Source Search Engine</title>
 <link rel="stylesheet" href="Open_Source_Search_Engine.bmp">
-<style>
-.modal
-{
-display: none;
-position: fixed;
-z-index: 1;
-padding-top: 200px;
-left: 0;
-top: 0;
-width: 100%;
-height: 100%;
-overflow: auto;
-background-color: rgb(0,0,0);
-background-color: rgba(0,0,0,0.4);
-}
-.modal-content
-{
-position: relative;
-background-color: #fefefe;
-margin: auto;
-padding: 0;
-border: 1px solid #888;
-width: 80%;
-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-}
-.modal-header {
-padding: 12px 16px;
-background-color: #f55656;
-color: white !important;
-font-size: 18px;
-}
-.modal-body {
-padding: 2px 16px; 
-font-size: 16px;
-}
-</style>
-<script>
-window.onload = function()
-{
-setTimeout(function()
-{
-var ad = document.querySelector("ins.adsbygoogle");
-var modal = document.getElementById("myModal");
-if(ad && ad.innerHTML.replace(/\s/g, "").length == 0)
-{
-modal.style.display = "block";}}, 2000);
-};
-</script>
+<link rel="stylesheet" href="Open_Source_Search_Engine.css">
+<script src="Open_Source_Search_Engine.js"></script>
 </head>
 <body>
-<div class="modal" id=myModal">
-<div class="modal-content">
-<div class="modal-header">
-It looks like you are using an ad blocker!
-</div>
-<div class="modal-body">
-<h1>To continue reading you need to turnoff adblocker and refresh the page</h1>
-</div>
-</div>
-</div>
+<h1 class="title">Open Source Search Engine</h1>
+<p class="title">Open Source Search Engine</p>
 </body>
 </html>
