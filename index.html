@@ -5,26 +5,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Open Source Search Engine</title>
 <link rel="stylesheet" href="Open_Source_Search_Engine.bmp">
-<link rel="stylesheet" href="Open_Source_Search_Engine.css">
 <style>
-html{background-color: black;}
-body{background-color: white; border-radius: 9px; border-width: 1px; border-style: solid; border-color: gray;}
-center{border-radius: 9px; border-width: 1px; border-style: solid; border-color: gray;}
-img{background-color: black; border-radius: 9px; border-width: 1px; border-style: solid; border-color: gray; width: 999px; height: 999px;}
-#Open_Source_Search_Engine{background-color: white; border-radius: 9px; border-width: 1px; border-style: solid; border-color: gray;}
-.Open_Source_Search_Engine{background-color: black; border-radius: 9px; border-width: 1px; border-style: solid; border-color: gray;}
-input{background-color: black; color: white; border-radius: 9px; border-width: 1px; border-style: solid; border-color: gray; width: 999px; height: auto; font-size: xx-large;}
-.title{background-color: black; color: white; border-radius: 9px; border-width: 1px; border-style: solid; border-color: gray;}
-.title2{background-color: white; color: black; border-radius: 9px; border-width: 1px; border-style: solid; border-color: gray;}
-.Open_Source_Search_Engine_List{background-color: black; color: white; border-radius: 9px; border-width: 1px; border-style: solid; border-color: gray;}
-a{color: white;}
+html{background-color: black; color: white; text-align: center;}
+a:link{color: black;}
+a:visited{color: gray;}
+video{background-color: white; border-radius: 9px; border-width: 9px; border-style: solid; border-color: gray; width: 699px; height: 699px;}
+input{background-color: black; color: white; border-radius: 9px; border-width: 9px; border-style: solid; border-color: gray; width: 999px; font-size: xx-large; text-align: center;}
+li{display: block;}
+div{background-color: white; border-radius: 9px; border-width: 9px; border-style: solid; border-color: gray;}
+.Open_Source_Search_Engine_Source_Code_On_GitHub:link{color: white; border-radius: 9px; border-width: 9px; border-style: solid; border-color: gray;}
+.Open_Source_Search_Engine_Source_Code_On_GitHub:visited{color: gray; border-radius: 9px; border-width: 9px; border-style: solid; border-color: gray;}
 </style>
-<script src="Open_Source_Search_Engine.js">
+<script>
 function search()
 {
-let input = document.getElementById('Open_Source_Search_Engine').value
+let input = document.getElementById('search_1').value
 input = input.toLowerCase();
-let x = document.getElementsByClassName('Open_Source_Search_Engine_List');
+let x = document.getElementById('search_2');
 for (i = 0; i < x.length; i++) {
 if (!x[i].innerHTML.toLowerCase().includes(input)) {
 x[i].style.display = "none";
@@ -38,26 +35,16 @@ x[i].style.display = "list-item";
 </script>
 </head>
 <body>
-<center>
-<h1 class="title">Open Source Search Engine</h1>
-<img src="Open_Source_Search_Engine.bmp" alt="">
-<div class="Open_Source_Search_Engine">
-<div id="Open_Source_Search_Engine">
-<input type="search" onkeyup="search()" name="search" id="search"  placeholder="Search">
-<ul id="Open_Source_Search_Engine_List">
-<li class="Open_Source_Search_Engine_List">
+<h1>Open Source Search Engine<br><video poster="Open_Source_Search_Engine.bmp" src="Open_Source_Search_Engine.mp4" controls="autoplay"></video></h1>
+<div>
+<br>
+<input type="search" onkeyup="search()" name="search" id="search_1"  placeholder="Search">
+<ul>
+<li id="search_2">
 <a href="https://samtiley.github.io/Open_Source_Social_Media" title="Open Source Social Media">Open Source Social Media</a>
 </li>
 </ul>
 </div>
-</div>
-<div class="Open_Source_Search_Engine">
-<a href="https://github.com/SamTiley/Open_Source_Search_Engine" title="Open Source Search Engine Source Code On GitHub">
-<p class="title2">
-<button type="button">Open Source Search Engine Source Code On GitHub</button></p>
-</a>
-<p class="title2">Open Source Search Engine</p>
-</div>
-</center>
+<a class="Open_Source_Search_Engine_Source_Code_On_GitHub" href="https://github.com/SamTiley/Open_Source_Search_Engine" title="Open Source Search Engine Source Code On GitHub">Open Source Search Engine Source Code On GitHub</a>
 </body>
 </html>
