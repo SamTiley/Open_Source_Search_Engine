@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Open Source Search Engine</title>
+<link rel="stylesheet" href="Open_Source_Search_Engine.bmp">
+<style>
+
+</style>
+<script>
+function search()
+{
+let input = document.getElementById('search').value
+input = input.toLowerCase();
+let x = document.getElementsByClassName('search');
+for (i = 0; i < x.length; i++)
+{
+if (!x[i].innerHTML.toLowerCase().includes(input))
+{
+x[i].style.display = "none";
+}
+else
+{
+x[i].style.display = "list-item";
+}
+}
+}
+</script>
+</head>
+<body>
+<h1>Open Source Search Engine</h1>
+<div class="list">
+<input type="search" name="search" id="search" onkeyup="search()" placeholder="search">
+<ul id="list">
+<li class="search">
+<a href=""></a>
+</li>
+</ul>
+</div>
+<a href="http://github.com/samtiley/Open_Source_Search_Engine">Open Source Search Engine Source Code On GitHub</a>
+</body>
+</html>
