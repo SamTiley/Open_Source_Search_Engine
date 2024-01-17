@@ -6,10 +6,8 @@
 <title>Open Source Search Engine</title>
 <link rel="stylesheet" href="Open_Source_Search_Engine.bmp">
 <style>
-.list{}
-#list{}
-.search{}
-#search{}
+.list{display: list-item;}
+#list{display: none;}
 </style>
 <script>
 function search()
@@ -31,16 +29,16 @@ x[i].style.display = "list-item";
 }
 </script>
 </head>
-<body>
+<body style="text-align: center;">
 <h1>Open Source Search Engine</h1>
 <div class="list">
-<input type="search" name="search" id="search" onkeyup="search()" placeholder="search">
+<input type="search" name="search" id="search" onkeyup="search()" placeholder="search" style="text-align: center;">
 <ul id="list">
 <li class="search">
 <a href=""></a>
 </li>
 </ul>
 </div>
-<a href="http://github.com/samtiley/Open_Source_Search_Engine">Open Source Search Engine Source Code On GitHub</a>
+<a href="http://github.com/samtiley/Open_Source_Search_Engine"><br>Open Source Search Engine Source Code On GitHub</a>
 </body>
 </html>
