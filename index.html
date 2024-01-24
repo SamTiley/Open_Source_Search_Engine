@@ -4,10 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Open Source Search Engine</title>
-<link rel="stylesheet" href="Open_Source_Search_Engine.bmp">
+<link rel="stylesheet" href="Open_Source_Search_Engine.png">
 <style>
 .list{display: list-item;}
-#list{display: none;}
+#list{display: list-item;}
+.search{}
+#search{}
 </style>
 <script>
 function search()
@@ -30,15 +32,16 @@ x[i].style.display = "list-item";
 </script>
 </head>
 <body style="text-align: center;">
-<h1>Open Source Search Engine</h1>
-<div class="list">
-<input type="search" name="search" id="search" onkeyup="search()" placeholder="search" style="text-align: center; font-size: xx-large;">
-<ul id="list">
+<h1>Open Source Search Engine<br>
+<video poster="Open_Source_Search_Engine.bmp" src="Open_Source_Search_Engine.mp4" controls="autoplay"></video>
+</h1>
+<div id="list">
+<input type="search" name="search" id="search"  onkeyup="search()" placeholder="search">
+<ul class="list">
 <li class="search">
-<a href="" style="font-size: xx-large;"></a>
+<a href="http://github.com/samtiley/Open_Source_Search_Engine">Open Source Search Engine Source Code On GitHub</a>
 </li>
 </ul>
 </div>
-<a href="http://github.com/samtiley/Open_Source_Search_Engine"><h1>Open Source Search Engine Source Code On GitHub</h1></a>
 </body>
 </html>
