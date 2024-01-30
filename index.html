@@ -8,10 +8,10 @@
 <style>
 .search{display: none;}
 #search{display: list-item;}
-.list{}
-#list{}
-a:link{}
-a:visited{}
+.list{background-color: white;}
+#list{background-color: gray;}
+a:link{color: white;}
+a:visited{color: black;}
 </style>
 <script>
 function search()
@@ -33,8 +33,8 @@ x[i].style.display = "list-item";
 }
 </script>
 </head>
-<body style="font-size: xx-large; text-align: center;">
-Open Source Search Engine
+<body style="background-color: black;">
+<center style="background-color: black; color: white; font-size: xx-large;">Open Source Search Engine
 <center class="list">
 <input type="search" name="search" id="search" onkeyup="search()" placeholder="search" spellcheck="true" style="font-size: xx-large; text-align: center;">
 <ul id="list">
@@ -42,6 +42,7 @@ Open Source Search Engine
 <a href="http://github.com/samtiley/Open_Source_Search_Engine">Open Source Search Engine Source Code On GitHub</a>
 </li>
 </ul>
+</center>
 </center>
 </body>
 </html>
