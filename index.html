@@ -1,17 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" style="background-color: black; color: white; text-align: center; font-size: xx-large;">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Open Source Search Engine</title>
 <link rel="stylesheet" href="Open_Source_Search_Engine.bmp">
 <style>
-.search{display: none; text-align: center;}
-#search{display: list-item; text-align: center;}
-.list{display: list-item;}
-a{background-color: gray;}
-a:link{color: white;}
-a:visited{color: black;}
+.search{display: none;}
+#search{display: list-item;}
 </style>
 <script>
 function search()
@@ -33,16 +29,17 @@ x[i].style.display = "list-item";
 }
 </script>
 </head>
-<body>
-Open Source Search Engine<br>
+<body style="font-size: xx-large; text-align: center;">
+Open Source Search Engine
+<hr style="border: none;">
 <video poster="Open_Source_Search_Engine.bmp" src="Open_Source_Search_Engine.mp4" controls="autoplay"></video>
-<form>
-<input type="search" name="search" id="search" onkeyup="search()" placeholder="search">
-<ul class="list">
+<center>
+<input type="search" name="search" id="search" onkeyup="search()" placeholder="search" spellcheck="true" style="font-size: xx-large; text-align: center;">
+<ul>
 <li class="search">
 <a href="http://github.com/samtiley/Open_Source_Search_Engine">Open Source Search Engine Source Code On GitHub</a>
 </li>
 </ul>
-</form>
+</center>
 </body>
 </html>
