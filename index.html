@@ -12,7 +12,26 @@
 #list{border-radius: 0px; border-width: 1px; border-style: solid; border-color: white;}
 a:link{color: white;}
 a:visited{color: gray;}
+.adBar{background-color: transparent; height: 1px; width: 1px;}
 </style>
+<script>
+function Ad_Block_Detect()
+{
+$(document).ready(function()
+{
+if($("#wrapfabtest").height()>0)
+{
+alert('No AdBlock');
+}
+else
+{
+alert('AdBlock Detected');
+}
+}
+)
+;
+}
+</script>
 <script>
 function search()
 {
@@ -34,6 +53,10 @@ x[i].style.display = "list-item";
 </script>
 </head>
 <body>
+<div id="wrapfabtest">
+<div class="adBar">
+</div>
+</div>
 <center class="list" style="font-size: xx-large;">Open Source Search Engine<br>
 <input type="search" name="search" id="search" onkeyup="search()" placeholder="search" spellcheck="true" style="font-size: xx-large; text-align: center; width: 999px;">
 <ul id="list">
