@@ -9,6 +9,7 @@
 .search{display: none;}
 #search{display: list-item;}
 .list{font-size: xx-large;}
+.search_bar{font-size: xx-large; text-align: center; width: 999px;}
 </style>
 <script>
 function search()
@@ -32,7 +33,7 @@ x[i].style.display = "list-item";
 </head>
 <body>
 <center class="list">Open Source Search Engine<br>
-<input type="search" name="search" id="search" onkeyup="search()" placeholder="search" spellcheck="true" style="font-size: xx-large; text-align: center; width: 999px;">
+<input type="search" name="search" id="search" class="search_bar" onkeyup="search()" placeholder="search" spellcheck="true">
 <ul id="list">
 <li class="search">
 <a href="http://github.com/samtiley/Open_Source_Search_Engine">Open Source Search Engine Source Code On GitHub</a>
