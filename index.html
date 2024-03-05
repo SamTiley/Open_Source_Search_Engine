@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="background-color: black; color: white;">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,9 +9,10 @@
 #search{display: list-item;}
 .list{font-size: xx-large;}
 .search_bar{font-size: xx-large; text-align: center; width: 999px;}
-.ad_left{height: 999px; width: 99px; float: left;}
-.ad_right{height: 999px; width: 99px; float: right;}
-.ad_bottom{height: 99px; width: 999px;}
+.ad_left{height: 999px; width: 99px; float: left; background-color: black; border-color: white; border-width: 9px; border-style: solid;}
+.ad_right{height: 999px; width: 99px; float: right; background-color: black; border-color: white; border-width: 9px; border-style: solid;}
+.ad_bottom{height: 99px; width: 999px; background-color: black; border-color: white; border-width: 9px; border-style: solid;}
+.ad_top{height: 99px; width: 999px; background-color: black; border-color: white; border-width: 9px; border-style: solid;}
 </style>
 <script>
 function search()
@@ -34,17 +35,17 @@ x[i].style.display = "list-item";
 </script>
 </head>
 <body>
-<center>
-<center class="list">Open Source Search Engine<br>
+<center class="list">
+<div class="ad_top"></div>
+<div class="ad_left"></div>
+<div class="ad_right"></div>
+<br>
 <input type="search" name="search" id="search" class="search_bar" onkeyup="search()" placeholder="search" spellcheck="true">
 <ul id="list">
 <li class="search">
 <a href="http://github.com/samtiley/Open_Source_Search_Engine">Open Source Search Engine Source Code On GitHub</a>
 </li>
 </ul>
-<div class="ad_left"></div>
-<div class="ad_right"></div>
-</center>
 <div class="ad_bottom"></div>
 </center>
 </body>
