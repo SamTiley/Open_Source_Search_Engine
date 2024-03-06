@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" style="background-color: black; color: white;">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Open Source Search Engine</title>
 <style>
 .search{display: none;}
 #search{display: list-item;}
-.list{font-size: xx-large;}
-.search_bar{font-size: xx-large; text-align: center; width: 999px;}
-.ad{height: 99px; width: 999px; border-color: gray; border-width: 1px; border-style: solid;}
 </style>
+<script>
+function Detect_Ad_Block()
+{
+
+}
+</script>
 <script>
 function search()
 {
@@ -32,16 +33,14 @@ x[i].style.display = "list-item";
 </script>
 </head>
 <body>
-<center class="list">
-Open Source Search Engine
+<center style="font-size: xx-large;">
 <br>
-<input type="search" name="search" id="search" class="search_bar" onkeyup="search()" placeholder="search" spellcheck="true">
+<input type="search" name="search" id="search" onkeyup="search()" placeholder="Search Bar" spellcheck="true" style="font-size: xx-large; text-align: center; width: 999px;">
 <ul id="list">
 <li class="search">
 <a href="http://github.com/samtiley/Open_Source_Search_Engine">Open Source Search Engine Source Code On GitHub</a>
 </li>
 </ul>
-<div class="ad"></div>
 </center>
 </body>
 </html>
