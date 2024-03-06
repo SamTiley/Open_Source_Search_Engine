@@ -9,10 +9,7 @@
 #search{display: list-item;}
 .list{font-size: xx-large;}
 .search_bar{font-size: xx-large; text-align: center; width: 999px;}
-.ad_left{height: 999px; width: 399px; float: left; background-color: black; border-color: white; border-width: 9px; border-style: solid;}
-.ad_right{height: 999px; width: 399px; float: right; background-color: black; border-color: white; border-width: 9px; border-style: solid;}
-.ad_bottom{height: 99px; width: 999px; background-color: black; border-color: white; border-width: 9px; border-style: solid;}
-.ad_top{height: 99px; width: 999px; background-color: black; border-color: white; border-width: 9px; border-style: solid;}
+.ad{height: 99px; width: 999px; border-color: gray; border-width: 1px; border-style: solid;}
 </style>
 <script>
 function search()
@@ -36,9 +33,6 @@ x[i].style.display = "list-item";
 </head>
 <body>
 <center class="list">
-<div class="ad_top"></div>
-<div class="ad_left"></div>
-<div class="ad_right"></div>
 Open Source Search Engine
 <br>
 <input type="search" name="search" id="search" class="search_bar" onkeyup="search()" placeholder="search" spellcheck="true">
@@ -47,7 +41,7 @@ Open Source Search Engine
 <a href="http://github.com/samtiley/Open_Source_Search_Engine">Open Source Search Engine Source Code On GitHub</a>
 </li>
 </ul>
-<div class="ad_bottom"></div>
+<div class="ad"></div>
 </center>
 </body>
 </html>
