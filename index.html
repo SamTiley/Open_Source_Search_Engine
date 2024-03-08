@@ -6,10 +6,8 @@
 <title>Open Source Search Engine</title>
 <style>
 center{font-size: xx-large;}
-.search{display: list-item;}
-#search{display: none;}
-.search_bar{display: list-item;}
-#search_bar{display: none;}
+.search{display: none;}
+#search{display: list-item;}
 .ad_block_detect{display: none;}
 #ad_block_detect{display: list-item;}
 </style>
@@ -39,11 +37,11 @@ x[i].style.display = "list-item";
 Ad Blocker Detected
 </center>
 </center>
-<center class="search_bar">
+<center>
 Open Source Search Engine
-<input type="search" name="search" class="search" onkeyup="search()" placeholder="Search Bar" style="font-size: xx-large; text-align: center;">
+<input type="search" name="search" id="search" onkeyup="search()" placeholder="Search Bar" style="font-size: xx-large; text-align: center;">
 <ul id="list">
-<li id="search">
+<li class="search">
 <a href="http://github.com/samtiley/Open_Source_Search_Engine">Open Source Search Engine Source Code On GitHub</a>
 </li>
 </ul>
