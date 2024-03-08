@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en" style="background-color: black;">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Open Source Search Engine</title>
 <style>
-.search{display: none; font-size: xx-large; text-align: center;}
-#search{display: list-item; font-size: xx-large; text-align: center;}
+.search{display: none;}
+#search{display: list-item;}
+.search_bar{font-size: xx-large; text-align: center;}
 .ad_block_detect{display: none;}
 #ad_block_detect{display: list-item;}
 </style>
@@ -30,17 +31,19 @@ x[i].style.display = "list-item";
 }
 </script>
 </head>
-<body style="background-color: white;">
+<body>
 <center id="ad_block_detect">
+<center class="ad_block_detect">
+</center>
+</center>
 <center>
 <h1>Open Source Search Engine</h1>
-<input type="search" name="search" id="search" onkeyup="search()" placeholder="Search Bar">
+<input type="search" name="search" id="search" class="search_bar" onkeyup="search()" placeholder="Search Bar">
 <ul id="list">
 <li class="search">
 <a href="http://github.com/samtiley/Open_Source_Search_Engine">Open Source Search Engine Source Code On GitHub</a>
 </li>
 </ul>
-</center>
 </center>
 </body>
 </html>
