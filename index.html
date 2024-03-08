@@ -8,7 +8,7 @@
 center{font-size: xx-large;}
 .search{display: none;}
 #search{display: list-item;}
-.search_bar{font-size: xx-large; text-align: center;}
+.search_bar{}
 .ad_block_detect{display: none;}
 #ad_block_detect{display: list-item;}
 </style>
@@ -35,11 +35,12 @@ x[i].style.display = "list-item";
 <body>
 <center class="ad_block_detect">
 <center id="ad_block_detect">
+Ad Blocker Detected
 </center>
 </center>
 <center>
 Open Source Search Engine
-<input type="search" name="search" id="search" class="search_bar" onkeyup="search()" placeholder="Search Bar">
+<input type="search" name="search" id="search" class="search_bar" onkeyup="search()" placeholder="Search Bar" style="font-size: xx-large; text-align: center;">
 <ul id="list">
 <li class="search">
 <a href="http://github.com/samtiley/Open_Source_Search_Engine">Open Source Search Engine Source Code On GitHub</a>
